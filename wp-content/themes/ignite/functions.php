@@ -31,11 +31,37 @@
 		'has_archive' => true, 
 		'hierarchical' => false,
 		'menu_position' => 5,
+	    //'taxonomies' => array('nome-da-taxonomy') //DESCOMENTAR CASO TENHA CRIADO UMA TAXONOMY PARA ESSE "POST TYPE"
 		'supports' => array( 'title' )
 	); 
 	register_post_type('acomodacoes',$argsAcomodacoes);
 }
 add_action( 'init', 'codex_custom_init' );
+*/
+
+
+
+/*
+//ADD CUSTOM TAXONOMY
+add_action( 'init', 'build_taxonomies', 0 );
+ 
+function build_taxonomies() 
+{
+
+	// PARA VÁRIAS TAXONOMIES, DUPLIQUE ESSE BLOCO
+	register_taxonomy(
+	    'nome-da-taxomomy',
+	    'object-type', //NOME(S) TO "POST TYPE(S)" LIGADO(S) À ESSA TAXONOMY. 
+	    array(
+	        'hierarchical' => true, //TRUE = CATEGORIA | FALSE = TAG
+	        'label' => 'Label da Taxonomia',
+	        'query_var' => true,
+	        'rewrite' => false
+	    )
+	);
+
+
+}
 */
 
 
@@ -54,14 +80,27 @@ if ( function_exists( 'add_image_size' ) )
 */
 
 
-function get_post_by_type($type, $order = 'DESC', $per_page = -1, $paged = NULL)
+function get_post_by_type($type, $meta_key = NULL, $order = 'DESC', $per_page = -1, $paged = NULL)
 {
+	$args = array();
 	if (!isset( $paged ) )
 	{
 		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 	}
 
-	$args = array( 'post_type' => $type, 'posts_per_page' => $per_page, 'paged' => $paged, 'order' => $order );
+	if (isset( $meta_key ) )
+	{
+		$args['meta_key'] = $meta_key;
+		$args['orderby'] = 'meta_value_num';
+	}
+
+	$args = array(
+		'post_type'			=>		$type,
+		'posts_per_page' 	=>		$per_page,
+		'paged'			 	=>		$paged,
+		'order'				=>		$order
+	);
+
 	return new WP_Query( $args );
 }
 
