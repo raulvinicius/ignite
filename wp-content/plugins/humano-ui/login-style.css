@@ -1,0 +1,230 @@
+.login
+{
+	background-color: #121215;
+}
+
+.login #login
+{
+	background: url(img/bg-form.png);
+	height: 100%;
+}
+
+.login h1 a
+{
+	background: url(img/ipo-logo-palmieri-login.png) no-repeat center;
+	width: 212px;
+	height: 54px;
+}
+
+.login form
+{
+	background: none;
+	padding-bottom: 20px;
+}
+
+.login form label
+{
+	text-indent: -9999px;
+	height: 45px;
+	padding-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #f8f8f8;
+}
+
+.login form label[for='user_login']
+{
+	background: url(img/icon-usuario.png) no-repeat left center;
+	border-bottom: 1px solid #f8f8f8;
+	display: block;
+}
+
+.login form label[for='user_pass']
+{
+	background: url(img/icon-senha.png) no-repeat left center;
+	border-bottom: 1px solid #f8f8f8;
+	display: block;
+}
+
+.login form label input[type='text'],
+.login form label input[type='password']
+{
+	margin-left: 15%;
+	width: 85%;
+	color: #f7931e;
+	background: none;
+	border: none;
+	outline: 0;
+	font-style: italic;
+	margin-top: -15px;
+	margin-bottom: 0;
+}
+
+.login form label input[type='text']:focus,
+.login form label input[type='text']:active,
+.login form label input[type='password']:focus,
+.login form label input[type='password']:active
+{
+	border: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.login form label[for='rememberme']
+{
+	display: block;
+	text-indent: inherit;
+	width: 100%;
+}
+
+/*
+.login form label[for='rememberme']:before
+{
+	content: ' ';
+	display: block;
+	width: 34px;
+	height: 20px;
+	-webkit-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px solid #f8f8f8;
+}
+*/
+
+/*
+.login form label[for='rememberme']:after
+{
+	content: ' ';
+	display: block;
+	width: 14px;
+	height: 14px;
+	-webkit-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background-color: #32454f;
+}
+*/
+
+.login form label[for='rememberme']
+{
+	-webkit-touch-callout: none; 
+	-webkit-user-select: none;   
+	-khtml-user-select: none;    
+	-moz-user-select: none;      
+	-ms-user-select: none;       
+	user-select: none; 
+	margin-top: 30px;
+}
+
+.login form label #rememberme
+{
+/*	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+	filter: alpha(opacity=0);
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	opacity: 0;
+*/
+	width: 30px;
+	height: 20px;
+	-webkit-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px solid #f8f8f8;
+	/*background: none;*/
+	border: none;
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.login form label #rememberme:before
+{
+	content: ' ';
+	display: block;
+	width: 14px;
+	height: 14px;
+	margin-top: 3px;
+	margin-left: 3px;
+	-webkit-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	/*background-color: #fff;*/
+	background-color: #82959f;
+	-webkit-transition: margin-left 0.2s ease-in-out;
+	-o-transition: margin-left 0.2s ease-in-out;
+	transition: margin-left 0.2s ease-in-out;
+	-webkit-transition-property: margin-left, background-color;
+	-o-transition-property: margin-left, background-color;
+	transition-property: margin-left, background-color;
+}
+
+.login form label #rememberme:checked:before
+{
+	content: ' ';
+	margin-left: 13px;
+	background-color: #f7931e;
+}
+
+.login form .forgetmenot
+{
+	float: none;
+}
+
+.login form input#wp-submit
+{
+	width: 100%;
+	text-transform: uppercase;
+	border: none;
+	-webkit-border-radius: 0;
+	-khtml-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	float: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background: none;
+	font-size: 20px;
+	height: 50px;
+	-webkit-transition: background-color 0.2s;
+	-o-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+	text-shadow: none;
+}
+
+.login form input#wp-submit:hover,
+.login form input#wp-submit:active
+{
+	background: #f7931e;
+}
+
+.login form .submit
+{
+	position: relative;
+	background: #0a0a0a;
+}
+
+.login #nav a,
+.login #nav a:active,
+.login #nav a:hover,
+.login #nav a:focus,
+.login #nav a:link,
+.login #backtoblog a,
+.login #backtoblog a:active,
+.login #backtoblog a:hover,
+.login #backtoblog a:focus,
+.login #backtoblog a:link
+{
+	color: white;
+}
+
+.login #nav,
+.login #backtoblog
+{
+	text-align: center;
+	margin-top: 0;
+}

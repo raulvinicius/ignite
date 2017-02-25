@@ -1,5 +1,13 @@
 <?php 
 
+//IN CASE OF REWRITE CHASH BREAK THIS COMMENTS
+//flush_rewrite_rules();
+
+//OR THIS
+//global $wp_rewrite;
+//$wp_rewrite->flush_rules();
+
+
 // CUSTOM POST
 
 /*function codex_custom_init() {
