@@ -122,7 +122,7 @@ $(document).ready(function() {
 		$(this).closest('.alert').hide();
 	})
 
-});
+}); //end $(document).ready
 
 function contatoOk (data)
 {
