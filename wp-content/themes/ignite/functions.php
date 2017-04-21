@@ -1,6 +1,6 @@
 <?php 
 
-//IN CASE OF REWRITE CHASH BREAK THIS COMMENTS
+//IN CASE OF REWRITE CASH BREAK THIS COMMENTS
 //flush_rewrite_rules();
 
 //OR THIS
@@ -36,13 +36,16 @@
 		'query_var' => true,
 		'rewrite' => true,
 		'capability_type' => 'post',
-		'has_archive' => true, 
+		'has_archive' => false, 
 		'hierarchical' => false,
 		'menu_position' => 5,
+		'menu_icon' => 'dashicons-screenoptions',
 	    //'taxonomies' => array('nome-da-taxonomy') //DESCOMENTAR CASO TENHA CRIADO UMA TAXONOMY PARA ESSE "POST TYPE"
 		'supports' => array( 'title' )
 	); 
 	register_post_type('acomodacoes',$argsAcomodacoes);
+
+
 }
 add_action( 'init', 'codex_custom_init' );
 */
