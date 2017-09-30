@@ -108,6 +108,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	user-select: none;
 }
 
+button.go-top
+{
+    background: none;
+    background-image: url(img/gotop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2000;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
 /*----------------------CLASSES----------------------*/
 
 
