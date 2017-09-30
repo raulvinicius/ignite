@@ -4,6 +4,15 @@ $(document).ready(function() {
 	$( window ).scroll(function() 
 	{
 		setTimeout(showInAnimation,400);
+
+		if( $(window).scrollTop() > 200 )
+		{
+			$('.go-top').addClass('up');
+		}
+		else
+		{
+			$('.go-top').removeClass('up');
+		}
 	});
 	$( window ).trigger('scroll');
 
@@ -15,6 +24,9 @@ $(document).ready(function() {
 	$( window ).trigger('resize');
 
 
+	$('.go-top').on('click', function() {
+		$("html, body").animate({scrollTop: 0}, 800);
+	});
 
 
 	//-----------------MASONRY-----------------//

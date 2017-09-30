@@ -120,8 +120,24 @@ button.go-top
     border: none;
     outline: none;
     position: fixed;
-    bottom: 15px;
+    bottom: -30px;
     right: 15px;
+    -webkit-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -moz-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -o-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -ms-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+}
+
+button.go-top:hover,
+button.go-top:active
+{
+    background-position: center -10%
+}
+
+button.go-top.up
+{
+    bottom: 15px;
 }
 
 /*----------------------CLASSES----------------------*/
