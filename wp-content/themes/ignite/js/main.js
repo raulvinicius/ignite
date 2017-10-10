@@ -19,7 +19,14 @@ $(document).ready(function() {
 
 	$( window ).resize(function(e) 
 	{
-		//do something
+
+		//-----------------FULL HEIGHT-----------------//
+
+		$('.full-h').height($(window).height());
+
+		//-----------------FULL HEIGHT-----------------//
+
+
 	});
 	$( window ).trigger('resize');
 
