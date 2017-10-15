@@ -76,6 +76,30 @@ $(document).ready(function() {
 
 
 
+	//-----------------PARALLAXES-----------------//
+	$('.bg-parallax')
+	.css('background-attachment', 'fixed')
+	.each(function(){
+		var $obj = $(this);
+
+		$(window).scroll(function() {
+
+			var yPos = -($obj.offset().top +( $(window).scrollTop() / $obj.data("speed"))); 
+	 
+			var bgpos = '50% '+ yPos + 'px';
+	
+			$obj.css({
+				'-ms-background-position-y': yPos, 
+				'background-position-y': yPos, 
+			});
+	 
+		}); 
+	});
+	//-----------------PARALLAXES-----------------//
+	
+	
+
+
 	$( 'body' ).on( 'click', 'button.dead', function(){ return false; } );
 	
 	if( $( '#map-canvas' ).length > 0 )
