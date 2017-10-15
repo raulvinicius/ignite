@@ -23,6 +23,26 @@ $(document).ready(function() {
 		//-----------------FULL HEIGHT-----------------//
 
 		$('.full-h').height($(window).height());
+		
+		if( window.innerWidth < 768 )
+		{
+			$('.full-h-xs').height($(window).height());
+		}
+
+		if( window.innerWidth >= 768 )
+		{
+			$('.full-h-sm').height($(window).height());
+		}
+		
+		if( window.innerWidth >= 992 )
+		{
+			$('.full-h-md').height($(window).height());
+		}
+
+		if( window.innerWidth >= 1200 )
+		{
+			$('.full-h-lg').height($(window).height());
+		}
 
 		//-----------------FULL HEIGHT-----------------//
 
