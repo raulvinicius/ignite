@@ -22,7 +22,32 @@ $(document).ready(function() {
 
 		//-----------------FULL HEIGHT-----------------//
 
-		$('.full-h').height($(window).height());
+		//usa data-offset-fh (em px ou em %) para descontar o valor da altura total da tela
+		$('.full-h').each(function() {
+			$(this).css('height', 'auto')
+			var offset = 0;
+			var unit = 'px'
+			if( $(this).attr('data-offset-fh') != undefined )
+			{
+				offset = $(this).attr('data-offset-fh');
+			}
+
+			if( $(this).attr('data-offset-fh').indexOf('%') >= 0 )
+			{
+				unit = '%';
+			}
+			console.log(unit);
+
+			if( unit == 'px')
+			{
+				$(this).height($(window).height() - parseInt(offset));
+			}
+			else
+			{
+				$(this).height($(window).height() - ($(window).height() * (parseInt(offset) / 100) ) );
+			}
+		});
+
 		
 		if( window.innerWidth < 768 )
 		{

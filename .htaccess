@@ -16,3 +16,8 @@ RewriteRule . /ignite/index.php [L]
 </IfModule>
 
 # END WordPress
+
+<FilesMatch "^.*(error_log|wp-config\.php|php.ini|\.[hH][tT][aApP].*)$">
+Order deny,allow
+Deny from all
+</FilesMatch>
