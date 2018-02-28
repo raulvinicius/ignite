@@ -52,14 +52,14 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <!--[if IE]><link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/favicon.ico"><![endif]-->
-        <link rel="icon" href="<?php bloginfo('template_url') ?>/favicon.ico">
-        <link rel="apple-touch-icon" href="<?php bloginfo('template_url') ?>/apple-touch-icon.png">
+        <link rel="icon" href="<?php bloginfo('template_url') ?>/favicon.ico?<?php echo rand(0, 65165843); ?>">
+        <link rel="apple-touch-icon" href="<?php bloginfo('template_url') ?>/apple-touch-icon.png?<?php echo rand(0, 65165843); ?>">
 
-        <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/bootstrap.css">
-        <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/animate.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/bootstrap.css?<?php echo rand(0, 65165843); ?>">
+        <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/animate.css?<?php echo rand(0, 65165843); ?>">
 
-        <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/style.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/bootstrap-theme.min.css?<?php echo rand(0, 65165843); ?>">
+        <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/style.css?<?php echo rand(0, 65165843); ?>">
 
         
         <!-- http://www.favicon-generator.org/ -->

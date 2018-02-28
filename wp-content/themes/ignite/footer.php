@@ -4,17 +4,17 @@
 
         </footer>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src= "<?php bloginfo("template_url") ?>/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src= "<?php bloginfo("template_url") ?>/js/vendor/jquery-3.3.1.min.js?<?php echo rand(0, 65165843); ?>"><\/script>')</script>
 
-        <script src= "<?php bloginfo('template_url') ?>/js/bootstrap.min.js"></script>
-        <script src= "<?php bloginfo('template_url') ?>/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src= "<?php bloginfo('template_url') ?>/js/bootstrap.min.js?<?php echo rand(0, 65165843); ?>"></script>
+        <script src= "<?php bloginfo('template_url') ?>/js/vendor/modernizr-3.5.0.min.js?<?php echo rand(0, 65165843); ?>"></script>
 
-        <script src= "<?php bloginfo('template_url') ?>/js/main.js"></script>
-        <script src="<?php bloginfo('template_url') ?>/js/jquery.mask.min.js"></script>
-        <script src="<?php bloginfo('template_url') ?>/js/jquery.form.js"></script>
-        <script src="<?php bloginfo('template_url') ?>/js/jquery.validate.min.js"></script>
-        <!-- <script src="<?php bloginfo('template_url') ?>/js/jquery.cookie.js"></script> -->
+        <script src= "<?php bloginfo('template_url') ?>/js/main.js?<?php echo rand(0, 65165843); ?>"></script>
+        <script src="<?php bloginfo('template_url') ?>/js/jquery.mask.min.js?<?php echo rand(0, 65165843); ?>"></script>
+        <script src="<?php bloginfo('template_url') ?>/js/jquery.form.js?<?php echo rand(0, 65165843); ?>"></script>
+        <script src="<?php bloginfo('template_url') ?>/js/jquery.validate.min.js?<?php echo rand(0, 65165843); ?>"></script>
+        <!-- <script src="<?php bloginfo('template_url') ?>/js/jquery.cookie.js?<?php echo rand(0, 65165843); ?>"></script> -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <!-- 
