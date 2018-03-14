@@ -90,6 +90,8 @@ if ( function_exists( 'add_image_size' ) )
 }
 */
 
+$meses = array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro');
+
 
 function get_post_by_type($type, $meta_key = NULL, $order = 'DESC', $per_page = -1, $paged = NULL)
 {
