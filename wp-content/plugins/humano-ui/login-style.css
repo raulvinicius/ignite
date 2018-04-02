@@ -1,6 +1,7 @@
 .login
 {
-	background-color: #121215;
+	background: url(img/bg-login.jpg) no-repeat center;
+	background-color: #32454f;
 }
 
 .login #login
@@ -11,7 +12,7 @@
 
 .login h1 a
 {
-	background: url(img/ipo-logo-palmieri-login.png) no-repeat center;
+	background: url(img/logo-humano.png) no-repeat center;
 	width: 212px;
 	height: 54px;
 }
@@ -199,13 +200,30 @@
 .login form input#wp-submit:hover,
 .login form input#wp-submit:active
 {
-	background: #f7931e;
+	background: #e55819;
 }
 
 .login form .submit
 {
 	position: relative;
-	background: #0a0a0a;
+}
+
+.login form .submit:before,
+.login form .submit:after
+{
+	content: ' ';
+	background: white;
+	width: 80px;
+	height: 1px;
+	display: block;
+	position: absolute;
+	top: 50%;
+}
+
+.login form .submit:after
+{
+	right: 0;
+	left: auto;
 }
 
 .login #nav a,
