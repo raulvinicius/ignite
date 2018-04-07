@@ -88,9 +88,9 @@
         <meta property='fb:admins' content='fanpagedofacebook' /> <!-- essa configuração diz ao Facebook que você é o administrador da fanpage -->
         <meta property='og:locale' content='pt_BR' />
         <meta property='og:locale:alternate' content='en_US' /> <!-- idiomas alternativos em que o site também pode estar disponível -->
-        <meta property='og:title' content='' /> <!-- título interessante para a página (ex.: Conhecendo a equipe) -->
-        <meta property='og:site_name' content='' /> <!-- nome do site (ex.: Empresa X) -->
-        <meta property='og:description' content='' /> <!-- Descrição do conteúdo/site para intrigar os usuários (ex.: Fazendo o bem para o mundo), max: 200 caracteres -->
+        <meta property='og:title' content='<?php bloginfo('name') ?>' /> <!-- título interessante para a página (ex.: Conhecendo a equipe) -->
+        <meta property='og:site_name' content='<?php bloginfo('name') ?>' /> <!-- nome do site (ex.: Empresa X) -->
+        <meta property='og:description' content='<?php bloginfo('description') ?>' /> <!-- Descrição do conteúdo/site para intrigar os usuários (ex.: Fazendo o bem para o mundo), max: 200 caracteres -->
         <meta property='og:url' content='<?php bloginfo('url') ?>' />
         <meta property='og:image' content='<?php bloginfo('template_url') ?>/img/imagem.png'/>
         <meta property='og:image:type' content="image/png">
