@@ -92,10 +92,10 @@
         <meta property='og:site_name' content='<?php bloginfo('name') ?>' /> <!-- nome do site (ex.: Empresa X) -->
         <meta property='og:description' content='<?php bloginfo('description') ?>' /> <!-- Descrição do conteúdo/site para intrigar os usuários (ex.: Fazendo o bem para o mundo), max: 200 caracteres -->
         <meta property='og:url' content='<?php bloginfo('url') ?>' />
-        <meta property='og:image' content='<?php bloginfo('template_url') ?>/img/imagem.png'/>
+<!--         <meta property='og:image' content='<?php bloginfo('template_url') ?>/img/imagem.png'/>
         <meta property='og:image:type' content="image/png">
         <meta property="og:image:width" content="800">
-        <meta property="og:image:height" content="600">
+        <meta property="og:image:height" content="600"> -->
         <meta property='og:type' content='website' />
         <!-- caso o tipo seja um "ARTICLE" -->
         <!-- 
