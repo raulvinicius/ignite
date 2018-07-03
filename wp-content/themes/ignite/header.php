@@ -1,5 +1,4 @@
-<!-- CÓDIGO HTML VEM AQUI -->
-
+<?php date_default_timezone_set('America/Sao_Paulo'); ?>
 
 <?php if ( strpos( $_SERVER[ "REQUEST_URI" ], "frontend" ) ) : ?>
 
