@@ -40,6 +40,8 @@
 		'hierarchical' => false,
 		'menu_position' => 5,
 		'menu_icon' => 'dashicons-screenoptions',
+		//'supports' => array( 'title', 'editor'), //PARA HABILITAR O GUTENBERG NO CUSTOM POST É IMPORTANTE DECLARAR "EDITOR" NA ARRAY DE OPÇÕES
+		// 'show_in_rest' => 'true', //SETAR PARA "TRUE" PARA HABILITAR O GUTENBERG NO CUSTOM POST		
 	    //'taxonomies' => array('nome-da-taxonomy') //DESCOMENTAR CASO TENHA CRIADO UMA TAXONOMY PARA ESSE "POST TYPE"
 		'supports' => array( 'title' )
 	); 

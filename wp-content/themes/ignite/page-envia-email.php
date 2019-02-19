@@ -3,19 +3,19 @@
 	$nome = $_POST['nome'];
 	$nick = explode( " ", $nome, 2 );
 	$nick = $nick[0];
-	$email = $_POST['email'];
-	$assunto = $_POST['assunto'];
+	$emailUsuario = $_POST['email'];
+	$assuntoEmpresa = $_POST['assunto'];
 	$mensagem = $_POST['mensagem'];
 
 	$url = get_bloginfo('url');
 	$tUrl = get_bloginfo('template_url');
 
-	$nomeEmpresa = "Humano Studio";
-	$emailEmpresa = "oi@humanostud.io";
-	// $emailEmpresa = "raul@humanostud.io";
+	$nomeEmpresa = get_option('blogname');
+	$emailEmpresa = get_option('admin_email');
+	// $emailEmpresa = "raul@humanostudio.com.br";
 
 
-	$msgParaAdmin ="
+	$msgParaEmpresa ="
 	<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">
 	<div style='width: 100%; b: #fffbce; padding: 50px 0;'>
 		<table style='background: white; width: 460px; border-radius: 4px; margin: 0 auto; border: 15px solid #f35a04; border-spacing: 0'>
@@ -64,21 +64,20 @@
 	</div>
 	";
 
-	$headerParaUsuario = "MIME-Version: 1.1\r\n";
-	$headerParaUsuario .= "Content-type: text/html; charset=iso-8859-1\r\n";
-	$headerParaUsuario .= "From: $emailEmpresa <$nomeEmpresa>\r\n"; // remetente
-	$headerParaUsuario .= "Return-Path: $emailEmpresa\r\n"; // return-path
+	$headerParaUsuario[] = "MIME-Version: 1.1";
+	$headerParaUsuario[] = "Content-type: text/html; charset=UTF-8";
+	$headerParaUsuario[] = "From: $emailEmpresa"; // remetente
+	$headerParaUsuario[] = "Return-Path: $emailEmpresa"; // return-path
 	
-	$headerParaEmpresa = "MIME-Version: 1.0\r\n";
-	$headerParaEmpresa .= "Content-type: text/html; charset=iso-8859-1\r\n";
-	$headerParaEmpresa .="From: $email <$nome>\n";
-	$headerParaEmpresa .= "Return-Path: $emailEmpresa\r\n"; // return-path
-
+	$headerParaEmpresa[] = "MIME-Version: 1.1";
+	$headerParaEmpresa[] = "Content-type: text/html; charset=UTF-8";
+	$headerParaEmpresa[] = "From: $emailEmpresa\n";
+	$headerParaEmpresa[] = "Return-Path: $emailEmpresa"; // return-path
 
 	// if($_SERVER['HTTP_HOST'] != "localhost")
 	// {
-		mail($emailEmpresa,utf8_decode($assunto),utf8_decode($msgParaAdmin),$headerParaEmpresa) or die("erro");
-		mail($email,utf8_decode("Confirmação de Contato"),utf8_decode($msgParaUsuario),$headerParaUsuario) or die("erro");
+		wp_mail( $emailEmpresa, $assuntoEmpresa, $msgParaEmpresa, $headerParaEmpresa ) or die("Falha ao enviar e-mail para a empresa");
+		wp_mail( $emailUsuario, $nomeEmpresa . " - Confirmação de contato", $msgParaUsuario, $headerParaUsuario ) or die("Falha ao enviar e-mail para o usuário");
 	// }
 
 	echo "sucesso";

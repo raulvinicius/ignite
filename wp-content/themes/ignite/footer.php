@@ -4,6 +4,9 @@
 
         </footer>
 
+        <!-- AVISO COOKIES EULA -->
+        <!-- We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it. -->
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src= "<?php bloginfo("template_url") ?>/js/vendor/jquery-3.3.1.min.js?<?php echo rand(0, 65165843); ?>"><\/script>')</script>
 
