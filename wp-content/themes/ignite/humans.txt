@@ -3,8 +3,7 @@
 
 # TEAM
 
-    <Raul Vinicius> -- <Creative / Development> -- <@raul_vinicius>
-    <Raissa Costa> -- <Frontend> -- <>
+    <Raul Vinicius> -- <Creative / Development / Frontend> -- <@raul_vinicius>
 
 # THANKS
 
@@ -13,4 +12,4 @@
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3, WordPress
-    jQuery, Modernizr
+    jQuery, Modernizr, Bootstrap

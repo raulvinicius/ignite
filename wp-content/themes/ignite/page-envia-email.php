@@ -66,13 +66,13 @@
 
 	$headerParaUsuario[] = "MIME-Version: 1.1";
 	$headerParaUsuario[] = "Content-type: text/html; charset=UTF-8";
-	$headerParaUsuario[] = "From: $emailEmpresa"; // remetente
+	$headerParaUsuario[] = "From: $nomeEmpresa <$emailEmpresa>"; // remetente
 	$headerParaUsuario[] = "Return-Path: $emailEmpresa"; // return-path
 	
 	$headerParaEmpresa[] = "MIME-Version: 1.1";
 	$headerParaEmpresa[] = "Content-type: text/html; charset=UTF-8";
-	$headerParaEmpresa[] = "From: $emailEmpresa\n";
-	$headerParaEmpresa[] = "Return-Path: $emailEmpresa"; // return-path
+	$headerParaEmpresa[] = "From: $nome <$emailUsuario>\n";
+	$headerParaEmpresa[] = "Return-Path: $emailUsuario"; // return-path
 
 	// if($_SERVER['HTTP_HOST'] != "localhost")
 	// {
